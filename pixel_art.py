@@ -84,7 +84,12 @@ def plot_image(image):
     plt.show()
 
 
-bee = define_bee()
-plot_image(bee)
-butterfly = define_butterfly()
-plot_image(butterfly)
+import sys
+if(sys.argv[1] == "bee")
+    bee = define_bee()
+    plot_image(bee)
+elif(sys.argv[1] == "butterfly")
+    butterfly = define_butterfly()
+    plot_image(butterfly)
+else
+    print("subject of pixel art not specified")
