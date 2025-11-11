@@ -7,7 +7,8 @@ def define_bee():
     # define some colours
     black = [0, 0, 0]
     yellow = [1.0, 0.85, 0]
-    grey = [0.65] * 3
+    pink = [1, 0.753, 0.796]
+    grey = [0.15] * 3
 
     image_mat = np.ones((15, 15, 3)) * grey
 
@@ -81,8 +82,8 @@ def plot_image(image):
     plt.axis('off')
     plt.imshow(image)
     plt.show()
-    
-    
+
+
 bee = define_bee()
 plot_image(bee)
 butterfly = define_butterfly()
