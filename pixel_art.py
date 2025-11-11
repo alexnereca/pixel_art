@@ -31,7 +31,8 @@ def define_butterfly():
 
     # define some colours
     black = [0, 0, 0]
-    blue = [0.2, 0.4, 0.8]
+    other = [0.2, 0.4, 0.8]
+    other = [0.5, 0.4, 0.2]
 
     # specify which pixels are which colour
     c = 8
@@ -59,15 +60,15 @@ def define_butterfly():
         image_mat[11, i*1+c] = black
 
         # fill in the centre line by line
-        image_mat[3, [i*j+c for j in [4, 5]]] = blue
-        image_mat[4, [i*j+c for j in range(2, 7)]] = blue
-        image_mat[5:7, [i*j+c for j in range(1, 7)]] = blue
-        image_mat[7, [i*j+c for j in range(2, 5)]] = blue
-        image_mat[8, i*1+c] = blue
-        image_mat[9, [i*j+c for j in range(1, 5)]] = blue
-        image_mat[10, [i*j+c for j in range(1, 6)]] = blue
-        image_mat[11, [i*j+c for j in range(2, 6)]] = blue
-        image_mat[12, [i*j+c for j in range(3, 5)]] = blue
+        image_mat[3, [i*j+c for j in [4, 5]]] = other
+        image_mat[4, [i*j+c for j in range(2, 7)]] = other
+        image_mat[5:7, [i*j+c for j in range(1, 7)]] = other
+        image_mat[7, [i*j+c for j in range(2, 5)]] = other
+        image_mat[8, i*1+c] = other
+        image_mat[9, [i*j+c for j in range(1, 5)]] = other
+        image_mat[10, [i*j+c for j in range(1, 6)]] = other
+        image_mat[11, [i*j+c for j in range(2, 6)]] = other
+        image_mat[12, [i*j+c for j in range(3, 5)]] = other
 
     return image_mat
 
